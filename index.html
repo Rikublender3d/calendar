@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>カレンダーツール</title>
+</head>
+<body class="bg-gradient-to-r from-slate-300 to-slate-500">
+    <div class="container align-middle flex flex-col text-center py-10">
+<div class="flex-col items-center">
+    <h1 class="text-2xl my-4 md:text-3xl font-semibold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">日にちを入力するとカレンダーが表示される<br>使えそうで全く使えないツール</h1>
+    <div class="md:block grid mb-4">
+    <input id="year" placeholder="YYYY" class="m-auto md:m-0 border-cyan-950 border-1 rounded-sm">
+    <input id="month" placeholder="MM" class="m-auto md:m-0 border-cyan-950 border-1 rounded-sm">
+    <input id="day" placeholder="DD" class=" m-auto md:m-0 border-cyan-950 border-1 rounded-sm">
+    <button id="make" class="p-1 border-cyan-950 border-1 rounded-sm bg-white m-auto md:m-0 md:mt-0 mt-1">表示</button>
+</div>
+    <div>
+    <table id="calendar" class="p-1 justify-center flex items-center bg-white rounded-lg inline-block">
+        <tr>
+            <th class="p-4">日</th>
+            <th class="p-4 ">月</th>
+            <th class="p-4  ">火</th>
+            <th class="p-4 ">水</th>
+            <th class="p-4">木</th>
+            <th class="p-4">金</th>
+            <th class="p-4">土</th>
+        </tr>
+    </table>
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

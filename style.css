@@ -1,0 +1,15 @@
+.container{
+    max-width: 1080px;
+    margin:auto;
+}
+#exact-day{
+    background-color: aqua;
+    color:white;
+    border-radius: 50%;
+}
+.child{
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+}
