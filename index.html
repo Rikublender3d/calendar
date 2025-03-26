@@ -7,18 +7,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>カレンダーツール</title>
 </head>
-<body class="bg-gradient-to-r from-slate-300 to-slate-500">
-    <div class="container align-middle flex flex-col text-center py-10">
+<header>
+    <nav class="navbar bg-primary">
+      <div class="bg-indigo-900      p-4">
+        <a class="text-white text-3xl">Calendar tool
+        </a>
+      </div>
+    </nav>
+  </header>
+<body class="">
+    <div class="container align-middle flex flex-col text-center">
 <div class="flex-col items-center">
-    <h1 class="text-2xl my-4 md:text-3xl font-semibold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">日にちを入力するとカレンダーが表示される<br>使えそうで全く使えないツール</h1>
+    <h1 class="text-3xl p-5">年月日を入力するとカレンダーが表示されるツール</h1>
+    <h1 class="text-2xl p-4">Enter a date</h1>
     <div class="md:block grid mb-4">
-    <input id="year" placeholder="YYYY" class="m-auto md:m-0 border-cyan-950 border-1 rounded-sm">
-    <input id="month" placeholder="MM" class="m-auto md:m-0 border-cyan-950 border-1 rounded-sm">
-    <input id="day" placeholder="DD" class=" m-auto md:m-0 border-cyan-950 border-1 rounded-sm">
-    <button id="make" class="p-1 border-cyan-950 border-1 rounded-sm bg-white m-auto md:m-0 md:mt-0 mt-1">表示</button>
+    <input id="year" placeholder="YYYY" class="m-auto px-1 md:m-0 border-cyan-950 border-1 rounded-sm">
+    <input id="month" placeholder="MM" class="m-auto px-1 md:m-0 border-cyan-950 border-1 rounded-sm">
+    <input id="day" placeholder="DD" class=" m-auto px-1 md:m-0 border-cyan-950 border-1 rounded-sm">
+    <button id="make" class="bg-blue-400 text-white ransition hover:opacity-40 p-1 border-cyan-950 rounded-sm m-auto md:m-0 md:mt-0 mt-1">表示</button>
 </div>
     <div>
-    <table id="calendar" class="p-1 justify-center flex items-center bg-white rounded-lg inline-block">
+    <table id="calendar" class="shadow-lg p-1 justify-center flex items-center bg-white rounded-lg inline-block">
         <tr>
             <th class="p-4">日</th>
             <th class="p-4 ">月</th>
